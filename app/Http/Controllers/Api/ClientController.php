@@ -45,7 +45,7 @@ class ClientController extends Controller
             return response()->json(["message"=> "Client inexistant"],404);
         }
         $client->delete();
-        return response()->json(['message' => 'Client deleted successfully'], Response::HTTP_NO_CONTENT);
+        return response()->json(['message' => 'Client deleted successfully']);
     }
 
     public function update(Request $request, $numeroClient)
