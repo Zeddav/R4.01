@@ -50,13 +50,13 @@ use App\Http\Controllers\Api\ClientController;
 
 Route::resource('clients', ClientController::class);
 ```
-Cette ligne de code permet de créer automatiquement toutes les routes RESTful pour les méthodes du contrôleur, facilitant ainsi la gestion des clients via des requêtes HTTP.
+Cette ligne de code permet de créer automatiquement les routes dont nous avons besoin pour les méthodes du contrôleur, facilitant ainsi la gestion des clients via des requêtes HTTP.
 
 ## 4. Test de l'API
 Une fois les routes mises en place, il est possible de tester directement les requêtes GET dans l'URL de l'application en utilisant un navigateur ou un outil comme Postman. Par exemple, en accédant à l'URL suivante :
 http://127.0.0.1:8000/api/clients/1
 
-La réponse JSON pour un client d'indexe de base de données 1 trouvé correspond à ceci :
+La réponse JSON pour un client d'index de base de données 1 trouvé correspond à ceci :
 
 ```json
 {
@@ -69,7 +69,7 @@ La réponse JSON pour un client d'indexe de base de données 1 trouvé correspon
 }
 ```
 
-Le test a également été effectué dans Postman, un outil de test d'API, pour valider que le contrôleur renvoie bien les données attendues au format JSON. Cet outil a notammant permis la vérification des requêtes de type POST ou DELETE.
+Les tests ont également été effectués dans [Postman](https://www.postman.com/), un outil de test d'API, pour valider que le contrôleur renvoie bien les données attendues au format JSON. Cet outil a notammant permis la vérification des requêtes de type POST ou DELETE.
 Un affichage de la liste complette des clients après coup permet de vérifier le fonctionnement de ces méthodes.
 
 ### Création d'un client
