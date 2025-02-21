@@ -70,6 +70,7 @@ La réponse JSON pour un client d'indexe de base de données 1 trouvé correspon
 ```
 
 Le test a également été effectué dans Postman, un outil de test d'API, pour valider que le contrôleur renvoie bien les données attendues au format JSON. Cet outil a notammant permis la vérification des requêtes de type POST ou DELETE.
+Un affichage de la liste complette des clients après coup permet de vérifier le fonctionnement de ces méthodes.
 
 ### Création d'un client
 <img src="images/testPostmanCreation.png">
@@ -77,7 +78,10 @@ Le test a également été effectué dans Postman, un outil de test d'API, pour 
 ### Suppression d'un client
 <img src="images/testPostmanSuppression.png">
 
-Un affichage de la liste complette des clients après coup permet de vérifier le fonctionnement de ces méthodes.
+En cas de tentative de suppression ou d'affichage d'un client inexistant, l'API renvoie un code de statut HTTP 404 accompagné d'un message d'erreur.
+
+<img src="images/testPostmanSuppressionFalse.png">
+
 
 ## Conclusion
 
