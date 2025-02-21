@@ -70,7 +70,7 @@ La réponse JSON pour un client d'index de base de données 1 trouvé correspond
 ```
 
 Les tests ont également été effectués dans [Postman](https://www.postman.com/), un outil de test d'API, pour valider que le contrôleur renvoie bien les données attendues au format JSON. Cet outil a notammant permis la vérification des requêtes de type POST ou DELETE.
-Un affichage de la liste complette des clients après coup permet de vérifier le fonctionnement de ces méthodes.
+Un affichage de la liste complète des clients après coup permet de vérifier le fonctionnement de ces méthodes.
 
 ### Création d'un client
 <img src="images/testPostmanCreation.png">
