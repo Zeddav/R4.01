@@ -48,9 +48,9 @@ Pour exposer les fonctionnalités de notre contrôleur API, il a fallu définir 
 ```php
 use App\Http\Controllers\Api\ClientController;
 
-Route::resource('clients', ClientController::class);
+Route::apiResource('clients', ClientController::class);
 ```
-Cette ligne de code permet de créer automatiquement les routes dont nous avons besoin pour les méthodes du contrôleur, facilitant ainsi la gestion des clients via des requêtes HTTP.
+Cette ligne de code permet de créer automatiquement les routes RESTful dont nous avons besoin pour les méthodes index, store, show, update et destroy du contrôleur, facilitant ainsi la gestion des clients via des requêtes HTTP.
 
 ## 4. Test de l'API
 Une fois les routes mises en place, il est possible de tester directement les requêtes GET dans l'URL de l'application en utilisant un navigateur ou un outil comme Postman. Par exemple, en accédant à l'URL suivante :

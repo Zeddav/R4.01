@@ -11,7 +11,7 @@ class Client extends Model
     
     protected $table = 'clients';
 
-    protected $primaryKey = 'numeroClient';
+    protected $primaryKey = 'NumeroClient';
 
     protected $fillable = [
         'nom',

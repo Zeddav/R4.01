@@ -45,7 +45,7 @@ class ClientController extends Controller
 
     public function destroy($numeroClient)
     {
-        $client = Client::where('numeroClient', $numeroClient)->firstOrFail();
+        $client = Client::find($numeroClient);
         $client->delete();
         return redirect()->route('clients.index');
     }
